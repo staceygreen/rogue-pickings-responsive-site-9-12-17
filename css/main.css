@@ -1,0 +1,262 @@
+/*Rogue Pickings - Responsive Design*/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	margin: 0 auto; 
+	max-width: 1200px;
+}
+
+/*------------------ MOBILE FIRST ------------------*/
+/*------------------ MODULE 1 ------------------*/
+/*The widths are in a percentage!*/
+
+header {
+	border-bottom: 3px solid #77a466;
+	font-size: 0.875em; /* 14px */
+	height: 100px;  
+	margin: 0 auto;
+	width: 100%;
+}
+
+header h1 {
+	color: black;
+	float: left;
+	font-size: 2.14286em; /* 30px */
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;  
+	width: 100%;
+}
+
+header span {
+	color: #77a466;
+}
+
+header nav {
+	float: left; 
+	padding: 20px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+header nav a {
+	color: #77a466; 
+	float: left;
+	font-size: 1.29em; /* 18px */
+	font-weight: bold;
+	padding: 10px 0px;
+	text-decoration: none; 
+	text-transform: uppercase;
+	width: 100%
+}
+
+/*------------------ MODULE 2 ------------------*/
+/*The widths are in a percentage!*/
+
+.top-section {
+	clear: both;
+	font-size: 1em; /* 16px */
+	margin: 0 auto; 
+	width: 100%;
+}
+
+.main-image {
+	float: left;
+	height: auto; 
+	width: 100%;
+}
+
+.main-image img { 
+	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+	width: 100%;
+}
+
+.main-title {
+	float: left;
+	font-size: 1em; /* 16px */
+	height: auto;
+	width: 100%;
+}
+
+.main-title h3 {
+	color: #77a466;
+	font-size: 1.5em; /* Mobile 24px, Desktop 18px */
+	padding: 5px 30px; 
+	text-align: left;
+	text-transform: uppercase; 
+}
+
+.main-title p { 
+	line-height: 25px;
+	padding: 0px 30px 5px 30px;
+}
+
+/*------------------ MODULE 3 ------------------*/
+
+.bottom-section {
+	font-size: 1em; /* 16px */
+	margin: 0 auto;
+}
+
+.section-one, 
+.section-two, 
+.section-three {
+	border-top: 1px solid #eee; 
+	float: left;
+	height: auto;  
+	width: 100%;
+}
+
+.section-one h4, 
+.section-two h4, 
+.section-three h4 {
+	font-size: 0.75em; /* 12px */
+	text-transform: uppercase;
+}
+
+.section-one h4 {
+	padding: 10px 0px 3px 30px;
+}
+
+.section-two h4, 
+.section-three h4 {
+	padding: 10px 30px;
+}
+
+.menu {
+	font-size: 1em; /* 16px */
+	list-style: none; 
+	padding: 0px 0px 0px 30px; /* Desktop padding-bottom: 21px; */
+}
+
+.menu li {
+	padding: 10px 0px 0px 0px; 
+	color:#77a466;
+}
+
+.section-two p {
+	color: #333;  
+	font-size: 1em; /* 16px */
+	line-height: 21px;
+	padding: 0px 30px 5px 30px;
+}
+
+.section-three p {
+	font-size: 1em; /* 16px */
+	line-height: 24px;
+	padding: 0px 0px 10px 30px;
+}
+
+/*------------------ MODULE 4 ------------------*/
+/*The widths are in a percentage!*/
+
+footer {
+	color: black;
+	border-top: 3px solid #eee;
+	clear: both;
+	font-size: 1em; /* 16px */
+	height: 50px; 
+	margin: 0 auto; 
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+footer span {
+	color: #77a466;
+	font-family: 'Pacifico', cursive; 
+	font-size: 0.875em; /* 14px */
+	text-transform: lowercase;
+}
+
+/*------------------ TABLET ------------------*/
+
+@media all and (min-width:768px) {
+	header h1 {
+		font-size: 2.57em; /* 36px */
+		padding: 10px 0;
+	}
+
+	header nav a {
+		float: none; /* important for centering text */
+		font-size: 1.186em; /* 18px */
+		padding: 10px 10px; 
+		width: auto; /* important for unstacking menu */
+	}
+
+	.main-title h3 {
+		font-size: 1.125em; /* Mobile 24px, Tablet & Desktop 18px */
+		padding: 5px 30px;  
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 100%;
+	}
+}
+
+/*------------------ DESKTOP ------------------*/
+
+@media all and (min-width:940px) {
+	header {
+		border-bottom: none;
+	}
+
+	header h1 {
+		text-align: left;
+		width: 40%;
+	}
+
+	header nav {
+		float: left; 
+		padding: 50px 0px 0px 0px;
+		width: 60%;
+	}
+
+	header nav a {
+		float: right;
+		font-size: 1em; /* 14px */
+		padding: 0 10px; 
+	}
+
+	.main-title h3 {
+		font-size: 1.125em; /* Mobile 24px, Tablet & Desktop 18px */
+		padding: 5px 0px;  
+	}
+
+	.main-title p { 
+		line-height: 25px;
+		padding: 0px 0px 5px 0px;
+	}
+
+    .section-one,
+	.section-two,
+	.section-three {
+		width: 33.33%;
+	}
+
+	.section-one h4 {
+		padding: 10px 0px 3px 0px;
+	}
+
+	.menu { 
+		padding: 0px 0px 21px 0px;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		box-sizing: border-box;
+	}
+}
+
+
+
+
